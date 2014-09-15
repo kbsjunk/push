@@ -1,12 +1,12 @@
 <?php namespace Kitbs\Push\Transport;
 
-use Swift_Transport;
+use TransportInterface;
 use GuzzleHttp\Client;
-use Swift_Mime_Message;
+// use Swift_Mime_Message;
 use GuzzleHttp\Post\PostFile;
-use Swift_Events_EventListener;
+// use Swift_Events_EventListener;
 
-class MailgunTransport implements Swift_Transport {
+class PushoverTransport implements TransportInterface {
 
 	/**
 	 * The Mailgun API key.

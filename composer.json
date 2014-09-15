@@ -20,7 +20,7 @@
         }
     },
     "suggest": {
-        "php-pushover/php-pushover": "Required for Pushover push notification driver."
+        "guzzlehttp/guzzle": "Required for Mailgun and Mandrill mail drivers."
     },
     "minimum-stability": "dev"
 }
