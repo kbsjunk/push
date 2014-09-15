@@ -1,4 +1,4 @@
-<?php namespace Illuminate\Mail;
+<?php namespace Kitbs\Push;
 
 use Swift_Mailer;
 use Illuminate\Support\ServiceProvider;
@@ -56,7 +56,7 @@ class MailServiceProvider extends ServiceProvider {
 	/**
 	 * Set a few dependencies on the mailer instance.
 	 *
-	 * @param  \Illuminate\Mail\Mailer  $mailer
+	 * @param  \Kitbs\Push\Mailer  $mailer
 	 * @param  \Illuminate\Foundation\Application  $app
 	 * @return void
 	 */

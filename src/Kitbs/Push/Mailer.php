@@ -1,4 +1,4 @@
-<?php namespace Illuminate\Mail;
+<?php namespace Kitbs\Push;
 
 use Closure;
 use Swift_Mailer;
@@ -261,7 +261,7 @@ class Mailer implements MailerContract, MailQueueContract {
 	/**
 	 * Add the content to a given message.
 	 *
-	 * @param  \Illuminate\Mail\Message  $message
+	 * @param  \Kitbs\Push\Message  $message
 	 * @param  string  $view
 	 * @param  string  $plain
 	 * @param  array   $data
@@ -353,7 +353,7 @@ class Mailer implements MailerContract, MailQueueContract {
 	 * Call the provided message builder.
 	 *
 	 * @param  \Closure|string  $callback
-	 * @param  \Illuminate\Mail\Message  $message
+	 * @param  \Kitbs\Push\Message  $message
 	 * @return mixed
 	 *
 	 * @throws \InvalidArgumentException
@@ -375,7 +375,7 @@ class Mailer implements MailerContract, MailQueueContract {
 	/**
 	 * Create a new message instance.
 	 *
-	 * @return \Illuminate\Mail\Message
+	 * @return \Kitbs\Push\Message
 	 */
 	protected function createMessage()
 	{

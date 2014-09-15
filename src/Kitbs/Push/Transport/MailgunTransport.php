@@ -1,4 +1,4 @@
-<?php namespace Illuminate\Mail\Transport;
+<?php namespace Kitbs\Push\Transport;
 
 use Swift_Transport;
 use GuzzleHttp\Client;

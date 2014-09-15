@@ -1,4 +1,4 @@
-<?php namespace Illuminate\Mail;
+<?php namespace Kitbs\Push;
 
 use Swift_Image;
 use Swift_Attachment;

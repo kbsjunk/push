@@ -1,11 +1,11 @@
-<?php namespace Illuminate\Mail;
+<?php namespace Kitbs\Push;
 
 use Illuminate\Support\Manager;
 use Swift_SmtpTransport as SmtpTransport;
 use Swift_MailTransport as MailTransport;
-use Illuminate\Mail\Transport\LogTransport;
-use Illuminate\Mail\Transport\MailgunTransport;
-use Illuminate\Mail\Transport\MandrillTransport;
+use Kitbs\Push\Transport\LogTransport;
+use Kitbs\Push\Transport\MailgunTransport;
+use Kitbs\Push\Transport\MandrillTransport;
 use Swift_SendmailTransport as SendmailTransport;
 
 class TransportManager extends Manager {
@@ -69,7 +69,7 @@ class TransportManager extends Manager {
 	/**
 	 * Create an instance of the Mailgun Swift Transport driver.
 	 *
-	 * @return \Illuminate\Mail\Transport\MailgunTransport
+	 * @return \Kitbs\Push\Transport\MailgunTransport
 	 */
 	protected function createMailgunDriver()
 	{
@@ -81,7 +81,7 @@ class TransportManager extends Manager {
 	/**
 	 * Create an instance of the Mandrill Swift Transport driver.
 	 *
-	 * @return \Illuminate\Mail\Transport\MandrillTransport
+	 * @return \Kitbs\Push\Transport\MandrillTransport
 	 */
 	protected function createMandrillDriver()
 	{
@@ -93,7 +93,7 @@ class TransportManager extends Manager {
 	/**
 	 * Create an instance of the Log Swift Transport driver.
 	 *
-	 * @return \Illuminate\Mail\Transport\LogTransport
+	 * @return \Kitbs\Push\Transport\LogTransport
 	 */
 	protected function createLogDriver()
 	{
